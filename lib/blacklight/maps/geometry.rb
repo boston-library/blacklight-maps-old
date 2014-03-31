@@ -4,7 +4,7 @@ module BlacklightMaps
   class Geometry
 
     def self.from_lon_lat_string(points)
-      new(points.split(' '))
+      new(points.split(',').reverse)
     end
 
     # This class contains Bounding Box objects and methods for interacting with
